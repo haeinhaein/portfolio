@@ -1453,10 +1453,11 @@
 
         //#main .bf
         var n = 0;
+        var bf_ln = $("#main .bf ul li").length - 1;
 
         function auto(){
             n++;
-            if(n>=4){
+            if(n>=bf_ln){
                 $("#main .bf ul").animate({"left":-1200*n},300,function(){
                     $(this).css({"left":0});
                 });
@@ -1491,7 +1492,7 @@
         $("#main .bf .prev").click(function(){
             n--;
             if( n < 0 ){
-                n = 3; 
+                n = (bf_ln) - 1; 
                 $("#main .bf ul").css({"left":-1200*(n+1)}).animate({"left":-1200*(n)});
             } else {
                 $("#main .bf ul").animate({"left":-1200*n},300);
@@ -1505,10 +1506,11 @@
         
         
         var mn = 0;
+        var mnb_ln = $("#main .mnb ul li").length - 1;
 
         function mauto(){
             mn++;
-            if(mn>=3){
+            if(mn>=mnb_ln){
                 $("#main .mnb ul").stop().animate({"left":-300*mn},300,function(){
                     $(this).css({"left":0});
                 });
@@ -1543,7 +1545,7 @@
         $("#main .mnb .prev").click(function(){
             mn--;
             if( mn < 0 ){
-                mn = 2; 
+                mn = (mnb_ln) - 1; 
                 $("#main .mnb ul").css({"left":-300*(mn+1)}).stop().animate({"left":-300*(mn)});
             } else {
                 $("#main .mnb ul").stop().animate({"left":-300*mn},300);
@@ -1650,10 +1652,12 @@
         
 
         var notn = 0;
+        var notn_ln = $("#itd .noti ul li").length - 1;
+        console.log(notn_ln);
 
         function notiAuto() {
             notn++;
-            if(notn >= 5) {
+            if(notn >= notn_ln) {
                 $("#itd .noti ul").stop().animate({"left":(-100*notn)+"%"},300,function(){
                     $(this).css({"left":0});
                 });
@@ -1675,7 +1679,7 @@
         $("#itd .noti .pb .prev").click(function(){
            notn--;
             if(notn < 0) {
-                notn = 4;
+                notn = (notn_ln) - 1;
                 $("#itd .noti ul").css({"left":(-100*(notn+1)+"%")}).animate({"left":(-100*notn)+"%"},300)
             } else {
                 $("#itd .noti ul").stop().animate({"left":(-100*notn)+"%"},300);
@@ -1704,10 +1708,12 @@
         /*footer*/
         
         var fn = 0;
+        var fn_ln = $("footer .fslide > li").length;
+        console.log(fn_ln);
 
         function fAuto() {
             fn++;
-            if(fn>=5){
+            if(fn>=fn_ln){
                 fn=0
             };
             $("footer .fslide").stop().animate({"left":-510*fn},300);
@@ -1738,7 +1744,7 @@
         $("footer .pb .prev").click(function(){
             fn--;
             if(fn<0){
-                fn=4;
+                fn=(fn_ln) - 1;
             };
             $("footer .fslide").stop().animate({"left":-510*fn},300);
         });
