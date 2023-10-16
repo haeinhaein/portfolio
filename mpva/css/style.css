@@ -24,8 +24,12 @@ body { font-family: 'Noto Sans KR'; font-size: 18px; color: #000; cursor: defaul
 .blind { position: absolute; left: 9999px; font-size:0; width: 0; height: 0; overflow: hidden; }
 ::selection { background-color: #ade1f5;  }
 
+
+
+/* header */
+
+
 header { height: 220px; background: #fff; z-index: 99; }
-header.bs {  }
 header.gd { border-bottom: 1px solid #000; }
 
 
@@ -83,6 +87,46 @@ header .gnb > ul > li:hover > a, header .gnb > ul > li:focus > a { color: #4869c
 
 
 
+/* footer */
+
+footer { margin-top: 80px; padding-top: 50px; border-top: 1px solid #000; overflow: hidden; }
+footer .pb { display: flex; align-content: center; justify-content: flex-start; position: absolute; right: 80px; top: 0; }
+footer .pb a { width: 45px; height: 45px; border: 1px solid #ddd; background: #fff; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border-right: 0; }
+footer .pb .next { border:1px solid #ddd; }
+
+footer .top { padding-bottom: 50px;  }
+
+footer .banzip { float: left; position: relative; padding-right: 80px; border-right: 1px solid #ddd; padding-bottom: 20px; }
+footer .banzip h3 { font-weight: normal; font-size: 18px; margin-bottom: 20px; }
+footer .banzip .cover { position: relative; width: 510px; overflow: hidden; }
+footer .banzip .fslide { position: relative; width: 2550px; }
+footer .banzip .fslide li { float: left;  width: 510px; }
+footer .banzip .fslide ul li { font-size: 16px; margin-bottom: 10px; color: #444; }
+footer .banzip
+
+footer .right { float: right; }
+footer .right ul { float: left; padding-top: 40px; padding-left: 50px; }
+footer .right ul .per { color: #1d4ec3; }
+footer .right ul li { color: #444; font-size: 16px; margin-bottom: 10px; }
+
+
+footer address { float: right; text-align: right; font-style: normal; font-size: 16px; margin-top: 40px; }
+footer address span { font-size: 26px; display: block; margin: 2px 0; }
+
+footer .bg { width: 1920px; background: #fff; }
+footer .btm {  padding: 20px 0 25px;font-size: 16px; background: #fff; border-top: 1px solid #ddd; margin: 0 auto; }
+footer .btm p { color: #666; }
+footer .btm span { position: absolute; right: 0; bottom: 20px; 10px; cursor: pointer; }
+footer .btm span img { position: relative; top: 8px;  margin-left: 3px;  }
+
+
+footer .loc { float: left; padding: 54px 65px; position: absolute; background: #fff; box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px; box-sizing: border-box; top: 354px; width: 1296px; left: 2px; }
+footer .loc ul { float: left; margin-right: 30px; font-size: 15px; color: #444; }
+footer .loc ul:last-of-type { margin-right: 0; }
+footer .loc ul li { margin-bottom: 12px; }
+
+
+
 /*main*/
 
 #main { z-index: 1; }
@@ -116,7 +160,7 @@ header .gnb > ul > li:hover > a, header .gnb > ul > li:focus > a { color: #4869c
 }
 
 
-
+/* svc */
 
 
 #svc .rb { width: 100%; height: 240px; border-radius: 40px 0; background: rgb(21,71,185);
@@ -156,6 +200,7 @@ background: linear-gradient(90deg, rgba(21,71,185,1) 13%, rgba(66,74,161,1) 23%,
 #svc .unt .set a > img { padding-top: 10px; }
 
 
+/* info */
 
 
 #info { margin-top: 80px; }
@@ -199,7 +244,7 @@ background: linear-gradient(90deg, rgba(21,71,185,1) 13%, rgba(66,74,161,1) 23%,
 #info .tbns .more img { position: relative; top: 10px; margin-right: 10px; }
 
 
-
+/* itd */
 
 
 #itd { margin-top: 80px; }
@@ -262,50 +307,13 @@ background: linear-gradient(90deg, rgba(21,71,185,1) 13%, rgba(66,74,161,1) 23%,
 
 
 
-/* footer */
-
-footer { margin-top: 80px; padding-top: 50px; border-top: 1px solid #000; overflow: hidden; }
-footer .pb { display: flex; align-content: center; justify-content: flex-start; position: absolute; right: 80px; top: 0; }
-footer .pb a { width: 45px; height: 45px; border: 1px solid #ddd; background: #fff; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border-right: 0; }
-footer .pb .next { border:1px solid #ddd; }
-
-footer .top { padding-bottom: 50px;  }
-
-footer .banzip { float: left; position: relative; padding-right: 80px; border-right: 1px solid #ddd; padding-bottom: 20px; }
-footer .banzip h3 { font-weight: normal; font-size: 18px; margin-bottom: 20px; }
-footer .banzip .cover { position: relative; width: 510px; overflow: hidden; }
-footer .banzip .fslide { position: relative; width: 2550px; }
-footer .banzip .fslide li { float: left;  width: 510px; }
-footer .banzip .fslide ul li { font-size: 16px; margin-bottom: 10px; color: #444; }
-footer .banzip
-
-footer .right { float: right; }
-footer .right ul { float: left; padding-top: 40px; padding-left: 50px; }
-footer .right ul .per { color: #1d4ec3; }
-footer .right ul li { color: #444; font-size: 16px; margin-bottom: 10px; }
-
-
-footer address { float: right; text-align: right; font-style: normal; font-size: 16px; margin-top: 40px; }
-footer address span { font-size: 26px; display: block; margin: 2px 0; }
-
-footer .bg { width: 1920px; background: #fff; }
-footer .btm {  padding: 20px 0 25px;font-size: 16px; background: #fff; border-top: 1px solid #ddd; margin: 0 auto; }
-footer .btm p { color: #666; }
-footer .btm span { position: absolute; right: 0; bottom: 20px; 10px; cursor: pointer; }
-footer .btm span img { position: relative; top: 8px;  margin-left: 3px;  }
-
-
-footer .loc { float: left; padding: 54px 65px; position: absolute; background: #fff; box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px; box-sizing: border-box; top: 354px; width: 1296px; left: 2px; }
-footer .loc ul { float: left; margin-right: 30px; font-size: 15px; color: #444; }
-footer .loc ul:last-of-type { margin-right: 0; }
-footer .loc ul li { margin-bottom: 12px; }
 
 
 
 
 
 
-/*서브*/
+/* sub page */
 
 
 
@@ -314,11 +322,6 @@ footer .loc ul li { margin-bottom: 12px; }
 
 
 .subcont #lnb { float: left; width: 260px; }
-
-
-
-
-
 
 
 
