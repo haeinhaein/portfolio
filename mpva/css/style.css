@@ -358,36 +358,6 @@ background: linear-gradient(90deg, rgba(21,71,185,1) 13%, rgba(66,74,161,1) 23%,
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width:800px) { /* 모바일용 */
     .pc { display: none !important; }
     
