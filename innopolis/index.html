@@ -190,7 +190,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#none">관계법련</a>
+                                <a href="#none">관계법령</a>
                             </li>
                             <li>
                                 <a href="#none">특구통계<i class="xi-external-link"></i></a>
@@ -1049,7 +1049,7 @@
 
 
         $("#section0 .card .prev").click(function(){
-            $("#section0 .card .sld .info:first-child").appendTo("#section0 .card .sld");
+            $("#section0 .card .sld.selected .info:first-child").appendTo("#section0 .card .sld");
             var ifn = $("#section0 .card .sld .info:last-child").attr("data-tab");
             $("#section0 .loc .pin ."+ifn).addClass("selected").siblings().removeClass("selected");
         });
@@ -1117,7 +1117,7 @@
             $("#section1 .cont:nth-of-type("+apn+") li").addClass("fadein");
         });
         
-        
+
         //#section2
         
         

@@ -60,6 +60,28 @@ $("header").on("mouseleave focusout", function(){
 });
 
 
+$("header .site-map-btn").click(function(){
+    $("header .site-map").removeClass("invi").addClass("vi");
+});
+
+
+$("header .site-map .close").click(function(){
+    $("header .site-map").removeClass("vi").addClass("invi");
+});
+
+
+
+
+
+
+$("header .parent > li > a").click(function(){
+    if (bw < 801) {
+        $("header .parent .sub").slideUp(300)
+        $(this).next().stop().slideToggle(300);
+    }
+});
+
+
 
 
 $('#section0 .next_scroll').on('click', function() {  
@@ -81,26 +103,6 @@ $('#section1 .next_scroll').on('click', function() {
 
 
 
-$("header .site-map-btn").click(function(){
-    $("header .site-map").removeClass("invi").addClass("vi");
-});
-
-
-$("header .site-map .close").click(function(){
-    $("header .site-map").removeClass("vi").addClass("invi");
-});
-
-
-
-
-
-
-$("header .parent > li > a").click(function(){
-    if (bw < 801) {
-        $("header .parent .sub").slideUp(300)
-        $(this).next().stop().slideToggle(300);
-    }
-});
 
 
 
