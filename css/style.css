@@ -1,0 +1,38 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * { 
+font-family: 'Noto Sans KR', sans-serif;
+}
+
+* { margin: 0; padding: 0; }
+a { text-decoration: none; color: inherit; }
+img { vertical-align: top; }
+li { list-style-type: none; }
+
+html { overflow-x: hidden; }
+body { font-family: 'Noto Sans KR'; font-size: 18px; color: #000; cursor: default; }
+.wrap { margin: 0 auto; position: relative; width: 1400px; }
+.wrap:after, ul:after, .cl:after { content:""; clear: both; display: block; }
+.blind { position: absolute; left: 9999px; font-size:0; width: 0; height: 0; overflow: hidden; }
+::selection { background-color: #eee; }
+
+
+
+
+/* index.html */
+
+
+header { width: 100%; height: 70px; line-height: 70px; position: fixed; z-index: 2; }
+header .wrap { height: 70px; }
+header h1 { margin-top: 12px; opacity: 0.8; }
+header ul { position: absolute; top: -10px; right: 0; }
+header ul li a { position: relative; opacity: 0.6; transition: 0.3s; }
+header ul li a:hover { opacity: 1; }
+header ul li { float: left; font-size: 18px; color: #fff; margin-left: 120px; }
+header ul li.selected a { opacity: 1; }
+header ul li.selected a:after { content:""; width: 100%; height: 3px; display: inline-block; background: #fff; opacity: 1; position: absolute; bottom:-2px; left:0; z-index:-1; }
+header ul li a:after { content:""; width: 0; height: 3px; display: inline-block; background: #fff; opacity: 1; position: absolute; bottom:0; left:0; z-index:-1; transition: 0.2s all; }
+header ul li a:hover:after { width: 100%; }
+#home { width: 100vw; margin: 0 auto; height: 100vh; overflow: hidden; background: url(../images/home_bg.png) no-repeat center/cover; }
+
+#home .wrap h2 { color: #fff; font-size: 140px; position: absolute; top: 200px; left: 0; letter-spacing: 2px; }

@@ -1,9 +1,13 @@
+
+
 var bw = $("body").width();
 
 $(window).resize(function() {
     bw = $("body").width();
     console.log(bw);
 });
+
+
 
 $(".pop p").click(function(){
     $(".pop").slideUp(300);
@@ -32,7 +36,6 @@ $(".top button").click(function(){
 
 $(window).scroll(function(){
     var wt = $(this).scrollTop();
-    console.log(wt)
     if( wt > 45 ){ 
         $(".pop").addClass("invi");
         $(".top").addClass("invi");
