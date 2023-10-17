@@ -3,7 +3,7 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 
 .notosanskr * { 
- font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Noto Sans KR', sans-serif;
 }
 
 
@@ -358,6 +358,36 @@ background: linear-gradient(90deg, rgba(21,71,185,1) 13%, rgba(66,74,161,1) 23%,
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width:800px) { /* 모바일용 */
     .pc { display: none !important; }
     
@@ -393,7 +423,6 @@ background: linear-gradient(90deg, rgba(21,71,185,1) 13%, rgba(66,74,161,1) 23%,
     
     #main { margin-top: 60px; }
     #main .mnb { width: 300px; height: 295px; background: #f6f6f6; overflow: hidden; position: static; margin: 0 auto; }
-   
     #main .mnb ul { width: 1200px; height: 250px; position: relative; }
     #main .mnb ul li { float: left; }
 
