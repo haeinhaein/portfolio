@@ -30,8 +30,8 @@ header ul li a { position: relative; opacity: 0.6; transition: 0.3s; }
 header ul li a:hover { opacity: 1; }
 header ul li { float: left; font-size: 18px; color: #fff; margin-left: 120px; }
 header ul li.selected a { opacity: 1; }
-header ul li.selected a:after { content:""; width: 100%; height: 3px; display: inline-block; background: #fff; opacity: 1; position: absolute; bottom:-2px; left:0; z-index:-1; }
-header ul li a:after { content:""; width: 0; height: 3px; display: inline-block; background: #fff; opacity: 1; position: absolute; bottom:0; left:0; z-index:-1; transition: 0.2s all; }
+header ul li.selected a:after { content:""; width: 100%; height: 2px; display: inline-block; background: #fff; opacity: 1; position: absolute; bottom:-4px; left:0; z-index:-1; }
+header ul li a:after { content:""; width: 0; height: 2px; display: inline-block; background: #fff; opacity: 1; position: absolute; bottom:-4px; left:0; z-index:-1; transition: 0.2s all; }
 header ul li a:hover:after { width: 100%; }
 #home { width: 100vw; margin: 0 auto; height: 100vh; overflow: hidden; background: url(../images/home_bg.png) no-repeat center/cover; }
 
