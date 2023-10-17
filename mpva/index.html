@@ -10,7 +10,7 @@
     <meta property="og:title" content="국가보훈부">
     <title>국가보훈부</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
-    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-1.11.1.min.js"></script>
 </head>
@@ -1665,7 +1665,7 @@
                 });
                 notn = 0;
             } else {
-                 $("#itd .noti ul").stop().animate({"left":(-100*notn)+"%"},300);
+                $("#itd .noti ul").stop().animate({"left":(-100*notn)+"%"},300);
             };
             $(".notinum").text(notn+1);
         };
@@ -1674,12 +1674,12 @@
 
 
         $("#itd .noti .pb .next").click(function(){
-           notiAuto(); 
+            notiAuto(); 
         });
 
 
         $("#itd .noti .pb .prev").click(function(){
-           notn--;
+            notn--;
             if(notn < 0) {
                 notn = (notn_ln) - 1;
                 $("#itd .noti ul").css({"left":(-100*(notn+1)+"%")}).animate({"left":(-100*notn)+"%"},300)
@@ -1693,15 +1693,15 @@
         var chk3 = 0;
         
         $("#itd .noti .pb .stop").click(function(){
-           if(chk3==0){
-               clearInterval(notiTimer);
-               $(this).find("img").attr("src","images/stop.png");
-               chk3=1;
-           } else {
-               notiTimer = setInterval("notiAuto()",3000);
-               $(this).find("img").attr("src","images/play.png")
-               chk3=0;
-           };
+            if(chk3==0){
+                clearInterval(notiTimer);
+                $(this).find("img").attr("src","images/stop.png");
+                chk3=1;
+            } else {
+                notiTimer = setInterval("notiAuto()",3000);
+                $(this).find("img").attr("src","images/play.png")
+                chk3=0;
+            };
         });
         
         
