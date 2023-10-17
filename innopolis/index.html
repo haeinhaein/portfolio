@@ -1063,7 +1063,9 @@
             console.log(sci);
             if (sci=="scibelt") { 
                 $("#section0 .map .map1").attr("src","images/map2.png");
-            } else {  
+            } else if (sci=="scibelt selected") {
+                $("#section0 .map .map1").attr("src","images/map2.png");
+            } else {
                 $("#section0 .map .map1").attr("src","images/map1.png");
             }
         });
