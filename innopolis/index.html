@@ -1049,8 +1049,8 @@
 
 
         $("#section0 .card .prev").click(function(){
-            $("#section0 .card .sld.selected .info:first-child").appendTo("#section0 .card .sld");
-            var ifn = $("#section0 .card .sld .info:last-child").attr("data-tab");
+            $("#section0 .card .sld.selected .info:first-child").appendTo("#section0 .card .sld.selected");
+            var ifn = $("#section0 .card .sld.selected .info:last-child").attr("data-tab");
             $("#section0 .loc .pin ."+ifn).addClass("selected").siblings().removeClass("selected");
         });
 
