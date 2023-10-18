@@ -96,20 +96,7 @@ header .site-map { width: 100%; overflow-y: scroll; position: fixed; top: 0; rig
 header .site-map.vi { display: block; }
 header .site-map.invi { display: none; }
 
-/*@keyframes st-invi {
-            0% {
-                opacity: 1;
-                transform: translate3d(0, 10%, 0);
-            }
-            to {
-                opacity: 0;
-                transform: translateZ(0);
-            }
-        }
 
-        header .site-map.invi {
-            animation: st-invi 0.6s;
-        }*/
 header .site-map .wrap { width: 1340px; }
 header .site-map .scroll .title { display: flex; justify-content: space-between; border-bottom: 1px solid #ddd; height: 80px; padding: 0 30px; }
 header .site-map .scroll .title h3 { margin-top: 10px; }
