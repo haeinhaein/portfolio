@@ -106,6 +106,49 @@ header ul li a:hover:after { width: 100%; }
 .pfc a { transition: 0.3s; }
 .pfc a:hover, #inno a:focus { background: #000; color: #fff; }
 
+.pfc .scroll { position: absolute; top: 820px; width: 100vw; display: flex; align-items: center; flex-direction: column; }
+.pfc .scroll .mouse { display: block; height: 50px; width: 30px; border-radius: 40px; border: 2px solid #000; position: relative;  }
+.pfc .scroll .mouse:before { display: block; content:""; width: 5px; height: 8px; border-radius: 10px; background: #000; position: absolute; top: 22px; left: 12px; }
+.pfc .scroll p { margin-top: 5px; font-size: 15px; }
+
+@keyframes scroll {
+    0% {
+        opacity: 1;
+        transform: translate3d(0, -10px, 0);
+    }
+    to {
+        opacity: 0;
+        transform: translateZ(0);
+    }
+}
+
+.pfc .scroll .mouse:before {
+    animation: scroll 1.6s;
+    animation-iteration-count : infinite;
+}
+
+@keyframes updown {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    20% {
+        transform: translate3d(0, -10px, 0);
+    }
+    40% {
+        transform: translate3d(0, 0, 0);
+    }
+    60% {
+        transform: translate3d(0, -10px, 0);
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.pfc .scroll {
+    animation: updown 1.8s;
+    animation-iteration-count : infinite;
+}
 
 /* innopolis */
 

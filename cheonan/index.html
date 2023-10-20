@@ -1350,134 +1350,6 @@
                 </div>
             </div>
         </div>
-<<<<<<< HEAD
-        <div class="top">
-            <img src="images/arrow_up.svg" alt="위로 가기">
-            <img src="images/arrow_up.svg" alt="위로 가기">
-            TOP
-        </div>
-    </footer>
-    
-    
-     
-    <script src=js/jquery-1.11.1.min.js></script>
-    <script>
-        
-        /*헤더*/
-        
-        
-        
-        
-        $(".bgb ul li").on("mouseover focusin",function(){
-            var sn = $(this).attr("data-tab");
-            $(".gnb").stop().slideUp(0);
-            $("."+sn).slideDown(300);
-        });
-        
-        $("header").on("mouseleave focusout",function(){
-            var sn = $(this).attr("data-tab");
-            $(".gnb").stop().slideUp(300);
-        });
-        
-        
-        
-        $(".gnb .sp li").on("mouseover focusin",function(){
-            var spn = $(this).index()+1;
-            $(".gnb .btm ul:nth-child("+spn+")").addClass("selected").siblings().removeClass("selected");
-            $(".gnb .sp li span").removeClass("selected");
-            $(this).find("span").addClass("selected")
-        })
-        
-        
-        /*메인*/
-        
-       
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        function mainslide() {
-            $("#main .bnr ul li:last-child").animate({"opacity":0},500, function(){
-                $(this).prependTo("#main .bnr ul").css({"opacity":"1"});
-            });
-            var min = $("#main .bnr ul li").index()+1;
-            $("#main .bar .now").text("0"+min)
-        }
-        
-        var maintimer = setInterval("mainslide()",3000)
-        
-        $("#main .bnr .next").click(function(){
-           mainslide(); 
-        });
-        
-        $("#main .bnr .prev").click(function(){
-            
-        });
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        $("#main .noti > ul li").click(function(){
-            $("#main .noti > ul li").removeClass("selected");
-            $(this).addClass("selected");
-            
-            var pn = $(this).attr("data-tab");
-            console.log(pn)
-            $("#main .noti .post").removeClass("selected");
-            $("div."+pn).addClass("selected");
-        });
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    
-    </script>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-=======
         <a href="#top" class="top">
             <img src="images/arrow_up.svg" alt="위로 가기">
             <img src="images/arrow_up.svg" alt="위로 가기">
@@ -1485,7 +1357,10 @@
         </a>
     </footer>
     
+  
+ 
+        
     
->>>>>>> ab48db324e495966e2d105697bf7100a8a0b0b2a
+    
 </body>
 </html>
