@@ -4,6 +4,24 @@
 font-family: 'Noto Sans KR', sans-serif;
 }
 
+<<<<<<< HEAD
+=======
+@font-face {
+    font-family: 'score';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pre';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+>>>>>>> ab48db324e495966e2d105697bf7100a8a0b0b2a
 * { margin: 0; padding: 0; }
 a { text-decoration: none; color: inherit; }
 img { vertical-align: top; }
@@ -22,20 +40,33 @@ body { font-family: 'Noto Sans KR'; font-size: 18px; color: #000; cursor: defaul
 /* index.html */
 
 
+<<<<<<< HEAD
 header { width: 100%; height: 70px; line-height: 70px; position: fixed; z-index: 2; background: #fff; box-shadow: 1px 1px 7px 1px rgba(0,0,0,0.2); }
 header.home { width: 100%; height: 70px; line-height: 70px; position: fixed; z-index: 2; background: none; box-shadow: none; }
+=======
+header { width: 100%; height: 70px; line-height: 60px; position: fixed; z-index: 2; background: #fff; box-shadow: 1px 1px 7px 1px rgba(0,0,0,0.2); }
+header.home { width: 100%; height: 70px;  position: fixed; z-index: 2; background: none; box-shadow: none; }
+>>>>>>> ab48db324e495966e2d105697bf7100a8a0b0b2a
 header .wrap { height: 70px; }
 header h1 { margin-top: 12px; opacity: 0.8; }
 header h1 img { width: 35px; }
 header ul { position: absolute; top: -10px; right: 0; }
 header ul li a { position: relative; opacity: 0.6; transition: 0.3s; }
 header ul li a:hover { opacity: 1; }
+<<<<<<< HEAD
 header ul li { float: left; font-size: 18px; color: #000; margin-left: 130px; }
+=======
+header ul li { float: left; font-size: 16px; color: #000; margin-left: 130px; }
+>>>>>>> ab48db324e495966e2d105697bf7100a8a0b0b2a
 header.home ul li { color: #fff; }
 header ul li.selected a { opacity: 1; }
 header ul li.selected a:after { content:""; width: 100%; height: 2px; display: inline-block; background: #000; opacity: 1; position: absolute; bottom:-4px; left:0; z-index:-1; }
 header.home ul li.selected a:after {  background: #fff;  }
+<<<<<<< HEAD
 header ul li a:after { content:""; width: 0; height: 2px; display: inline-block; background: #000; opacity: 1; position: absolute; bottom:-4px; left:0; z-index:-1; transition: 0.2s all; }
+=======
+header ul li a:after { content:""; width: 0; height: 2px; display: inline-block; background: #000; opacity: 1; position: absolute; bottom:-3px; left:0; z-index:-1; transition: 0.2s all; }
+>>>>>>> ab48db324e495966e2d105697bf7100a8a0b0b2a
 header.home ul li a:after { background: #fff; }
 header ul li a:hover:after { width: 100%; }
 #home { width: 100vw; margin: 0 auto; height: 100vh; overflow: hidden; background: url(../images/home_bg.png) no-repeat center/cover; }
@@ -50,6 +81,7 @@ header ul li a:hover:after { width: 100%; }
 
 #pf { position: relative; height: 100vh; }
 #pf .slide { width: 200%; height: 100%; position: relative; }
+<<<<<<< HEAD
 #pf .slide li { float: left; width: calc(100% / 2); height: 100%; display: flex; align-items: center; justify-content: center; }
 #pf .slide li .wrap { width: 70%; height: 70%;   }
 #pf .slide li .wrap div { width: 50%; }
@@ -57,14 +89,37 @@ header ul li a:hover:after { width: 100%; }
 #pf .slide li .left h3 { font-size: 80px;  color: transparent;  }
 #pf .slide li .right { float: right; height: 100%; display: flex; align-items: center; }
 #pf .slide li img { width: 50vw; }
+=======
+#pf .slide > li { float: left; width: calc(100% / 2); height: 100%; display: flex; align-items: center; justify-content: center; }
+#pf .slide > li .wrap { width: 70%; height: 70%;  }
+#pf .slide > li .wrap div { width: 50%; }
+#pf .slide > li .left { float: left; box-sizing: border-box; height: 100%; padding-top: 110px; padding-left: 150px; }
+#pf .slide > li .left h3 { font-size: 45px; color: black; line-height: 1.4; margin-bottom: 30px; }
+#pf .slide > li .right { float: right; height: 100%; display: flex; align-items: center; }
+#pf .slide > li img { width: 50vw; }
+#pf .slide .left ul li { width: auto !important; margin-bottom: 5px; font-size: 16px; }
+#pf .slide .left ul li strong { display: inline-block; margin-right: 20px; width: 60px; }
+
+#pf .link { position: absolute; bottom: 170px; width: 100vw; display: flex; justify-content: center; }
+#pf .link a { display: inline-block; border: 1px solid #000; border-radius: 40px; width: 160px; height: 50px; text-align: center; line-height: 50px; margin-right: 10px; transition:0.3s; }
+#pf .link a:hover, #pf .link a:focus { color: white; background: black; }
+
+
+
+>>>>>>> ab48db324e495966e2d105697bf7100a8a0b0b2a
 
 #pf button { position: absolute; top: calc(50% - 50px); font-size: 70px; background: none; border: none; cursor: pointer; }
 #pf button.prev { left: 50px; }
 #pf button.next { right: 50px; }
 
 #pf .page { position: absolute; bottom: 40px; width: 100%; display: flex; justify-content: center; align-items: center; }
+<<<<<<< HEAD
 #pf .page li { width: 12px; height: 12px; border-radius: 20px; border: 3px solid #000; text-indent: 100px; overflow: hidden; margin: 0 10px; }
 #pf .page li.selected { background: black; }
+=======
+#pf .page li { width: 5px; height: 5px; border-radius: 20px; text-indent: 100px; overflow: hidden; margin: 0 10px; background: #000; }
+#pf .page li.selected { width: 12px; height: 12px; background: black; }
+>>>>>>> ab48db324e495966e2d105697bf7100a8a0b0b2a
 
 
 
@@ -82,8 +137,108 @@ header ul li a:hover:after { width: 100%; }
 #inno { background: url(../images/innopolis_bg.png) no-repeat center; height: 5500px;  }
 
 
+<<<<<<< HEAD
 
 
 
 /* about */
 
+=======
+/* about */
+
+#about { width: 100vw; height: 100vh; display: flex; align-items: center;  }
+#about .wrap { width: 60%; height: 70%;  }
+
+#about h3 { width: 100%; text-align: center; height: 30%; font-size: 40px; box-sizing: border-box; padding-top: 80px; }
+
+#about .parent { width: 100%; height: 70%; }
+#about .parent > li { width: calc(100% / 3); height: 100%; float: left; box-sizing: border-box; display: flex; align-items: center; justify-content: flex-start; flex-direction: column; box-sizing: border-box; padding: 30px; }
+#about .parent > li figure { width: 100px; height: 100px; border: 1px solid #ccc; border-radius: 100px; display: flex; align-items: center; justify-content: center; }
+#about .parent > li h4 { margin: 20px 0 60px; font-size: 20px; }
+#about .parent .mi  { width: 55px; }
+
+#about .sk-sub img { width: 25px; margin-right: 20px; }
+#about .sk-sub li { display: flex; justify-content: space-between; margin-bottom: 10px; }
+#about .sk-sub li span { font-size: 14px; }
+
+#about .pf-sub li { padding-left: 15px; font-size: 15px; position: relative; margin-bottom: 10px; width: 230px; }
+#about .pf-sub li:before { content:""; width: 5px; height: 2px; background: #000; position: absolute; top: 10px; left: 3px; display: block; }
+
+
+
+
+
+.container {
+    width: 180px;
+    text-align: center;
+}
+
+
+.progress {
+    padding: 4px;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.1);  
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.progress-bar {
+    height: 12px;
+    border-radius: 30px;
+    transition: 0.4s linear;  
+    transition-property: width, background-color;    
+}
+
+.progress-moved .b1 {
+    width: 90%; 
+    background-color: #000;  
+    animation: proAni1 3s; 
+}
+@keyframes proAni1 {
+    0%   { width: 5%; background-color: #000;}
+    100% { width: 90%; background-color: #000; }
+}
+
+
+.progress-moved .b2 {
+    width: 85%; 
+    background-color: #000;  
+    animation: proAni2 3s; 
+}
+@keyframes proAni2 {
+    0%   { width: 5%; background-color: #000;}
+    100% { width: 85%; background-color: #000; }
+}
+
+
+.progress-moved .b3 {
+    width: 95%; 
+    background-color: #000;  
+    animation: proAni3 3s; 
+}
+@keyframes proAni3 {
+    0%   { width: 5%; background-color: #000;}
+    100% { width: 95%; background-color: #000; }
+}
+
+
+.progress-moved .b4 {
+    width: 85%; 
+    background-color: #000;  
+    animation: proAni4 3s; 
+}
+@keyframes proAni4 {
+    0%   { width: 5%; background-color: #000;}
+    100% { width: 85%; background-color: #000; }
+}
+
+
+.progress-moved .b5 {
+    width: 70%; 
+    background-color: #000;  
+    animation: proAni5 3s; 
+}
+@keyframes proAni5 {
+    0%   { width: 5%; background-color: #000;}
+    100% { width: 70%; background-color: #000; }
+}
+>>>>>>> ab48db324e495966e2d105697bf7100a8a0b0b2a
