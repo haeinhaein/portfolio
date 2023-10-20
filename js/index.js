@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-var n = 0;
-var ln = $("#pf .slide li").length; 
-=======
 
 
 
@@ -16,7 +12,6 @@ var ln = $("#pf .slide li").length;
 
 var n = 0;
 var ln = $("#pf .slide > li").length; 
->>>>>>> ab48db324e495966e2d105697bf7100a8a0b0b2a
 
 $("#pf .slide").width(100 * ln+"%");
 $("#pf .slide li").width(100 / ln+"%");
@@ -51,10 +46,6 @@ for (var i = 1; i <= ln; i++) {
     } else {
         $(".page").append("<li>"+i+"</li>");
     }
-<<<<<<< HEAD
-};
-=======
 };
 
 
->>>>>>> ab48db324e495966e2d105697bf7100a8a0b0b2a
