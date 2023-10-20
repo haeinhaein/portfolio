@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta charset="UTF-8">
+    <title>정보공개_사전정보공개_사전정보공개목록</title>
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="start pc">
+            <div class="wrap">
+                <img src="images/top.svg" alt="이 누리집은 대한민국 공식 전자정부 누리집입니다.">
+                이 누리집은 대한민국 공식 전자정부 누리집입니다.
+            </div>
+        </div>
+        <div class="hd wrap">
+            <h1>
+                <a href="index.html"><img src="images/logo.png" alt="국가보훈부"></a>
+                <img src="images/logo2.png" alt="다시 대한민국! 새로운 국민의 나라" class="pc">
+                <a href="#none"><img src="images/ham_mb.png" alt="햄버거메뉴" class="ham mb"></a>
+            </h1>
+            <div class="sch pc">
+                <input type="text" placeholder="검색어를 입력하세요"><img src="images/search.png" alt="검색">
+            </div>
+            <div class="snb pc">
+                <span class="scale">화면크기</span><span class="sci pl"><img src="images/plus.png" alt="확대"></span><span class="sci min"><img src="images/minus.png" alt="축소"></span>
+                <span class="app"><a href="#none">보훈민원신청</a></span>
+                <span class="lang"><a href="#none">ENGLISH</a></span>
+                <ul class="sns">
+                    <li><a href="#none"><img src="images/sns_blog.png" alt="블로그"></a></li>
+                    <li><a href="#none"><img src="images/sns_yt.png" alt="유튜브"></a></li>
+                    <li><a href="#none"><img src="images/sns_ins.png" alt="인스타그램"></a></li>
+                    <li><a href="#none"><img src="images/sns_twt.png" alt="트위터"></a></li>
+                    <li><a href="#none"><img src="images/sns_fb.png" alt="페이스북"></a></li>
+                </ul>
+            </div>
+            <div class="coun pc">
+                <a href="#none"><img src="images/online.jpg" alt="온라인나라사랑신문"></a>
+                <a href="#none"><img src="images/flagicon.png" alt="태극기">국가상징</a>
+            </div>
+            <a href="#none" class="sm pc"><img src="images/ham.png" alt="사이트맵"></a>
+            <ul class="gnbt">
+                <div class="mbgl mb"><img src="images/logo.png" alt="국가보훈부"></div>
+                <a href="#"><i class="xi-close mb"></i></a>
+                <li data-tab="g1">
+                    <a href="#none">정보공개</a>
+                    <ul class="mb">
+                        <li><a href="#none">사전정보공개</a></li>
+                        <li><a href="#none">정보공개청구</a></li>
+                        <li><a href="#none">공공데이터개방</a></li>
+                        <li><a href="#none">국가보훈부 OPEN API</a></li>
+                        <li><a href="#none">정책실명제</a></li>
+                    </ul>
+                </li>
+                <li data-tab="g2">
+                    <a href="#none">민원·참여</a>
+                    <ul class="mb">
+                        <li><a href="#none">전자민원신청안내</a></li>
+                        <li><a href="#none">민원사무서식</a></li>
+                        <li><a href="#none">나만의예우</a></li>
+                        <li><a href="#none">신체검사제도</a></li>
+                        <li><a href="#none">대부원리금 지로납부</a></li>
+                        <li><a href="#none">보훈상담센터</a></li>
+                        <li><a href="#none">민원</a></li>
+                        <li><a href="#none">나만의 보훈심사</a></li>
+                        <li><a href="#none">중대재해예방</a></li>
+                        <li><a href="#none">맑은행정</a></li>
+                        <li><a href="#none">우수위탁병원인증제</a></li>
+                        <li><a href="#none">규제개혁추진마당</a></li>
+                        <li><a href="#none">보훈민원신청</a></li>
+                    </ul>
+                </li>
+                <li data-tab="g3">
+                    <a href="#none">적극행정</a>
+                    <ul class="mb">
+                        <li><a href="#none">제도소개</a></li>
+                        <li><a href="#none">국민참여</a></li>
+                        <li><a href="#none">적극행정자료실</a></li>
+                    </ul>
+                </li>
+                <li data-tab="g4">
+                    <a href="#none">알림·소식</a>
+                    <ul class="mb">
+                        <li><a href="#none">보훈부소식</a></li>
+                        <li><a href="#none">지방청소식</a></li>
+                        <li><a href="#none">국민광장</a></li>
+                        <li><a href="#none">토론마당</a></li>
+                        <li><a href="#none">보훈홍보관</a></li>
+                    </ul>
+                </li>
+                <li data-tab="g5">
+                    <a href="#none">예우보상</a>
+                    <ul class="mb">
+                        <li><a href="#none">보훈대상</a></li>
+                        <li><a href="#none">지원안내</a></li>
+                        <li><a href="#none">이동보훈 복지서비스</a></li>
+                        <li><a href="#none">생활수준조사</a></li>
+                        <li><a href="#none">국가보훈등록증</a></li>
+                    </ul>
+                </li>
+                <li data-tab="g6">
+                    <a href="#none">자료공간</a>
+                    <ul class="mb">
+                        <li><a href="#none">회의자료</a></li>
+                        <li><a href="#none">정책자료</a></li>
+                        <li><a href="#none">평가자료</a></li>
+                        <li><a href="#none">예산자료</a></li>
+                        <li><a href="#none">현황·통계</a></li>
+                        <li><a href="#none">현충시설</a></li>
+                        <li><a href="#none">친일귀속재산</a></li>
+                        <li><a href="#none">법령정보</a></li>
+                        <li><a href="#none">쟁송제도</a></li>
+                        <li><a href="#none">정부위원회운영공개</a></li>
+                        <li><a href="#none">외국보훈제도</a></li>
+                        <li><a href="#none">행정서비스헌장</a></li>
+                        <li><a href="#none">학술·연구</a></li>
+                    </ul>
+                </li>
+                <li data-tab="g7">
+                    <a href="#none">보훈기념행사</a>
+                    <ul class="mb">
+                        <li><a href="#none">정부기념행사</a></li>
+                        <li><a href="#none">독립기념행사</a></li>
+                        <li><a href="#none">참전기념행사</a></li>
+                        <li><a href="#none">기념사업회</a></li>
+                        <li><a href="#none">이달의 보훈행사</a></li>
+                    </ul>
+                </li>
+                <li data-tab="g8">
+                    <a href="#none">보훈인물</a>
+                    <ul class="mb">
+                        <li><a href="#none">보고싶다 전우야 신청</a></li>
+                        <li><a href="#none">독립유공자(공훈록)</a></li>
+                        <li><a href="#none">이달의 독립운동가</a></li>
+                        <li><a href="#none">독립운동가 자료실</a></li>
+                        <li><a href="#none">이달의 전쟁영웅</a></li>
+                        <li><a href="#none">보훈콘텐츠 작품</a></li>
+                    </ul>
+                </li>
+                <li data-tab="g9">
+                    <a href="#none">국가보훈부 소개</a>
+                    <ul class="mb">
+                        <li><a href="#none">국가보훈부 소개</a></li>
+                        <li><a href="#none">장차관 소개</a></li>
+                        <li><a href="#none">조직안내</a></li>
+                        <li><a href="#none">지(방)청/국립묘지</a></li>
+                        <li><a href="#none">관련누리집</a></li>
+                        <li><a href="#none">찾아오시는길</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="bg g1 pc">
+            <div class="wrap gnb">
+                <div class="tit">
+                    <h3>정보공개</h3>
+                    <p>국민통합에 기여하는<br>책임보훈</p>
+                    <img src="images/g1.png" alt="내비게이션 삽화">
+                </div>
+                <ul class="cont">
+                    <li>
+                        <a href="#none">사전정보공개</a>
+                        <ul>
+                            <li><a href="#none">사전정보공개목록</a></li>
+                            <li><a href="#none">업무추진비</a></li>
+                            <li><a href="#none">문서공개</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">정보공개청구</a>
+                        <ul>
+                            <li><a href="#none">정보공개청구</a></li>
+                            <li><a href="#none">불복신청처분사례</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">공공데이터개방</a>
+                    </li>
+                    <li>
+                        <a href="#none">국가보훈부 OPEN API</a>
+                        <ul>
+                            <li><a href="#none">현충시설 OPEN API</a></li>
+                            <li><a href="#none">독립유공자 OPEN API</a></li>
+                            <li><a href="#none">독립운동사료 OPEN API</a></li>
+                            <li><a href="#none">제군센터브이넷 채용정보</a></li>
+                            <li><a href="#none">제대군인 군특기별 검색</a></li>
+                            <li><a href="#none">보훈관서 채용정보 검색</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">정책실명제</a>
+                        <ul>
+                            <li><a href="#none">정책실명제안내</a></li>
+                            <li><a href="#none">주요정책목록</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bg g2 pc">
+            <div class="wrap gnb">
+                <div class="tit">
+                    <h3>민원·참여</h3>
+                    <p>국민통합에 기여하는<br>책임보훈</p>
+                    <img src="images/g2.png" alt="내비게이션 삽화">
+                </div>
+                <ul>
+                    <li>
+                        <a href="#none">전자민원신청안내</a>
+                    </li>
+                    <li>
+                        <a href="#none">민원사무서식</a>
+                    </li>
+                    <li>
+                        <a href="#none">나만의예우</a>
+                    </li>
+                    <li>
+                        <a href="#none">신체검사제도</a>
+                        <ul>
+                            <li><a href="#none">신체검사제도</a></li>
+                            <li><a href="#none">국가보훈 장해진단서 제도</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">대부원리금 지로납부</a>
+                    </li>
+                    <li>
+                        <a href="#none">보훈상담센터</a>
+                        <ul>
+                            <li><a href="#none">이용안내</a></li>
+                            <li><a href="#none">자주하는 질문</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">민원</a>
+                        <ul>
+                            <li><a href="#none">질의응답</a></li>
+                            <li><a href="#none">11채팅,화상(수어)상담</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">나만의 보훈심사</a>
+                    </li>
+                    <li>
+                        <a href="#none">중대재해예방</a>
+                        <ul>
+                            <li><a href="#none">정보 공유</a></li>
+                            <li><a href="#none">교육 자료</a></li>
+                            <li><a href="#none">의견 제안</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">맑은 행정</a>
+                        <ul>
+                            <li><a href="#none">고충민원</a></li>
+                            <li><a href="#none">예산낭비신고센터</a></li>
+                            <li><a href="#none">부패행위신고</a></li>
+                            <li><a href="#none">비영리법인 부정비리신고</a></li>
+                            <li><a href="#none">청탁금지법 위반행위 신고</a></li>
+                            <li><a href="#none">국가유공자 부정 등록 신고</a></li>
+                            <li><a href="#none">보훈급여금 부정수령 신고</a></li>
+                            <li><a href="#none">정부포상공개검증</a></li>
+                            <li><a href="#none">국민참여예산</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">우수 위탁병원 인증제</a>
+                    </li>
+                    <li>
+                        <a href="#none">규제개혁추진마당</a>
+                        <ul>
+                            <li><a href="#none">규제개혁신문고</a></li>
+                            <li><a href="#none">규제입증요청</a></li>
+                            <li><a href="#none">규제입증요청</a></li>
+                            <li><a href="#none">규제개혁추진현황</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">보훈민원신청</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bg g3 pc">
+            <div class="wrap gnb">
+                <div class="tit">
+                    <h3>적극행정</h3>
+                    <p>국민통합에 기여하는<br>책임보훈</p>
+                    <img src="images/g3.png" alt="내비게이션 삽화">
+                </div>
+                <ul>
+                    <li>
+                        <a href="#none">제도소개</a>
+                        <ul>
+                            <li><a href="#none">적극행정과 소극행정의 정의</a></li>
+                            <li><a href="#none">적극행정 추진방안</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">국민참여</a>
+                        <ul>
+                            <li><a href="#none">적극행정 국민추천</a></li>
+                            <li><a href="#none">소극행정신고</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">적극행정자료실</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bg g4 pc">
+            <div class="wrap gnb">
+                <div class="tit">
+                    <h3>알림·소식</h3>
+                    <p>국민통합에 기여하는<br>책임보훈</p>
+                    <img src="images/g4.png" alt="내비게이션 삽화">
+                </div>
+                <ul>
+                    <li>
+                        <a href="#none">보훈부소식</a>
+                        <ul>
+                            <li><a href="#none">공지사항</a></li>
+                            <li><a href="#none">보도자료</a></li>
+                            <li><a href="#none">언론보도설명·정정</a></li>
+                            <li><a href="#none">인사정보</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">지방청소식</a>
+                    </li>
+                    <li>
+                        <a href="#none">국민광장</a>
+                        <ul>
+                            <li><a href="#none">국민제안</a></li>
+                            <li><a href="#none">자유게시판</a></li>
+                            <li><a href="#none">참여사진</a></li>
+                            <li><a href="#none">칭찬합시다</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">토론마당</a>
+                        <ul>
+                            <li><a href="#none">정책토론</a></li>
+                            <li><a href="#none">전자공청회</a></li>
+                            <li><a href="#none">설문조사</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">보훈홍보관</a>
+                        <ul>
+                            <li><a href="#none">보훈영상관</a></li>
+                            <li><a href="#none">보훈사진관</a></li>
+                            <li><a href="#none">나라사랑신문(PDF)</a></li>
+                            <li><a href="#none">나라사랑신문 구독 해지</a></li>
+                            <li><a href="#none">말하는 나라사랑신문</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bg g5 pc">
+            <div class="wrap gnb">
+                <div class="tit">
+                    <h3>예우보상</h3>
+                    <p>국민통합에 기여하는<br>책임보훈</p>
+                    <img src="images/g5.png" alt="내비게이션 삽화">
+                </div>
+                <ul>
+                    <li>
+                        <a href="#none">보훈대상</a>
+                        <ul>
+                            <li><a href="#none">독립유공자</a></li>
+                            <li><a href="#none">국가유공자</a></li>
+                            <li><a href="#none">지원대상자</a></li>
+                            <li><a href="#none">보훈보상대상자</a></li>
+                            <li><a href="#none">참전유공자</a></li>
+                            <li><a href="#none">5.18민주유공자</a></li>
+                            <li><a href="#none">고엽제 후유(의)증</a></li>
+                            <li><a href="#none">특수임무유공자</a></li>
+                            <li><a href="#none">제대군인</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">지원안내</a>
+                        <ul>
+                            <li><a href="#none">보훈급여금</a></li>
+                            <li><a href="#none">교육지원</a></li>
+                            <li><a href="#none">대부지원</a></li>
+                            <li><a href="#none">의료지원</a></li>
+                            <li><a href="#none">생업지원</a></li>
+                            <li><a href="#none">기타지원</a></li>
+                            <li><a href="#none">보훈지원 안내자료</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">아동보훈 복지서비스</a>
+                        <ul>
+                            <li><a href="#none">서비스안내</a></li>
+                            <li><a href="#none">사업내용</a></li>
+                            <li><a href="#none">사업활동</a></li>
+                            <li><a href="#none">자료실</a></li>
+                            <li><a href="#none">유관기관누리집</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">생활수준조사</a>
+                    </li>
+                    <li>
+                        <a href="#none">국가보훈등록증</a>
+                        <ul>
+                            <li><a href="#none">구 국가유공자증 등(신분증)</a></li>
+                            <li><a href="#none">국가보훈등록증</a></li>
+                            <li><a href="#none">국가보훈등록증 발급안내</a></li>
+                            <li><a href="#none">모바일 국가보훈등록증 발급방법</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bg g6 pc">
+            <div class="wrap gnb">
+                <div class="tit">
+                    <h3>자료공간</h3>
+                    <p>국민통합에 기여하는<br>책임보훈</p>
+                    <img src="images/g6.png" alt="내비게이션 삽화">
+                </div>
+                <ul>
+                    <li>
+                        <a href="#none">회의자료</a>
+                        <ul>
+                            <li><a href="#none">주간회의</a></li>
+                            <li><a href="#none">국무·차관회의</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">정책자료</a>
+                        <ul>
+                            <li><a href="#none">정책보고서</a></li>
+                            <li><a href="#none">행사및기념</a></li>
+                            <li><a href="#none">보훈보상</a></li>
+                            <li><a href="#none">보훈선양</a></li>
+                            <li><a href="#none">보훈예우</a></li>
+                            <li><a href="#none">보훈복지</a></li>
+                            <li><a href="#none">제대군인</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">평가자료</a>
+                        <ul>
+                            <li><a href="#none">정부업무평가</a></li>
+                            <li><a href="#none">지수·만족도 등</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">예산자료</a>
+                        <ul>
+                            <li><a href="#none">예산</a></li>
+                            <li><a href="#none">보훈기금</a></li>
+                            <li><a href="#none">계약관련</a></li>
+                            <li><a href="#none">공공기관</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">현황·통계</a>
+                        <ul>
+                            <li><a href="#">등록·신청</a></li>
+                            <li><a href="#">신체검사</a></li>
+                            <li><a href="#">단체관련</a></li>
+                            <li><a href="#">독립운동</a></li>
+                            <li><a href="#">감사</a></li>
+                            <li><a href="#">반부패·청렴</a></li>
+                            <li><a href="#">현동조합 경영공시</a></li>
+                            <li><a href="#">기타</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">헌충시설</a>
+                    </li>
+                    <li>
+                        <a href="#none">친일귀속재산</a>
+                    </li>
+                    <li>
+                        <a href="#none">법령정보</a>
+                        <ul>
+                            <li><a href="#none">법령정보</a></li>
+                            <li><a href="#none">지자체 보훈관련 자체법규</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">쟁송제도</a>
+                        <ul>
+                            <li><a href="#none">쟁송제도</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">정부위원회운영공개</a>
+                    </li>
+                    <li>
+                        <a href="#none">외국보훈제도</a>
+                    </li>
+                    <li>
+                        <a href="#none">행정서비스헌장</a>
+                        <ul>
+                            <li><a href="#none">행정서비스 헌장 전문</a></li>
+                            <li><a href="#none">행정서비스 이행표준</a></li>
+                            <li><a href="#none">보훈가족께 드리는 당부말씀</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">학술·연구</a>
+                        <ul>
+                            <li><a href="#none">학술·연구</a></li>
+                            <li><a href="#none">학술회의 자료</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bg g7 pc">
+            <div class="wrap gnb">
+                <div class="tit">
+                    <h3>보훈기념행사</h3>
+                    <p>국민통합에 기여하는<br>책임보훈</p>
+                    <img src="images/g7.png" alt="내비게이션 삽화">
+                </div>
+                <ul>
+                    <li>
+                        <a href="#none">정부기념해상</a>
+                        <ul>
+                            <li><a href="#none">정부기념식</a></li>
+                            <li><a href="#none">기념식 참가신청</a></li>
+                            <li><a href="#none">기념식 참가신청 확인</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">독립기념행사</a>
+                    </li>
+                    <li>
+                        <a href="#none">참전기념행사</a>
+                    </li>
+                    <li>
+                        <a href="#none">기념사업회</a>
+                    </li>
+                    <li>
+                        <a href="#none">이달의 보훈행사</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bg g8 pc">
+            <div class="wrap gnb">
+                <div class="tit">
+                    <h3>보훈인물</h3>
+                    <p>국민통합에 기여하는<br>책임보훈</p>
+                    <img src="images/g8.png" alt="내비게이션 삽화">
+                </div>
+                <ul>
+                    <li>
+                        <a href="#none">보고싶다 전우야 신청</a>
+                    </li>
+                    <li>
+                        <a href="#none">독립유공자(공훈록)</a>
+                    </li>
+                    <li>
+                        <a href="#none">이달의 독립운동가</a>
+                    </li>
+                    <li>
+                        <a href="#none">독립운동가 자료실</a>
+                    </li>
+                    <li>
+                        <a href="#none">이달의 전쟁영웅</a>
+                    </li>
+                    <li>
+                        <a href="#none">보훈콘텐츠 작품</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bg g9 pc">
+            <div class="wrap gnb">
+                <div class="tit">
+                    <h3>국가보훈부 소개</h3>
+                    <p>국민통합에 기여하는<br>책임보훈</p>
+                    <img src="images/g9.png" alt="내비게이션 삽화">
+                </div>
+                <ul>
+                    <li>
+                        <a href="#none">국가보훈부 소개</a>
+                        <ul>
+                            <li><a href="#none">업무계획</a></li>
+                            <li><a href="#none">비전</a></li>
+                            <li><a href="#none">상징(MI)및 표어</a></li>
+                            <li><a href="#none">연혁</a></li>
+                            <li><a href="#none">기관주소록</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">장차관 소개</a>
+                        <ul>
+                            <li><a href="#none">장차관소개</a></li>
+                            <li><a href="#none">장관과의 대화</a></li>
+                            <li><a href="#none">주요일정</a></li>
+                            <li><a href="#none">연설문</a></li>
+                            <li><a href="#none">역대처차장</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">조직안내</a>
+                        <ul>
+                            <li><a href="#none">조직도</a></li>
+                            <li><a href="#none">직원안내</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">지(방)청/국립묘지</a>
+                    </li>
+                    <li>
+                        <a href="#none">관련 누리집</a>
+                    </li>
+                    <li>
+                        <a href="#none">찾아오시는길</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    
+    
+    
+    <div class="subcont">
+        <figure><img src="images/sub_visual_bg.jpg" alt="서브비주얼배경"></figure>
+        <div class="wrap">
+            <section id="lnb">
+                <h2 class="blind">로컬네비게이션</h2>
+                <div class="tit">
+                    정보공개
+                </div>
+                <ul>
+                    <li>
+                        <ul>
+                            <li><a href="#none">사전정보공개목록</a></li>
+                            <li><a href="#none">업무추진비</a></li>
+                            <li><a href="#none">문서공개</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="#none">정보공개청구</a></li>
+                            <li><a href="#none">불복신청처분사례</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">공공데이터개방</a>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="#none">현충시설 OPEN API</a></li>
+                            <li><a href="#none">독립유공자 OPEN API</a></li>
+                            <li><a href="#none">독립운동사료 OPEN API</a></li>
+                            <li><a href="#none">제군센터브이넷 채용정보</a></li>
+                            <li><a href="#none">제대군인 군특기별 검색</a></li>
+                            <li><a href="#none">보훈관서 채용정보 검색</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="#none">정책실명제 안내</a></li>
+                            <li><a href="#none">주요정책목록</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section id="openList">
+                <h2 class="blind">본문내용</h2>
+                <div class="tit">
+                    <h3>사전정보공개목록</h3>
+                    <ul>
+                        <li><a href="index.html"><img src="images/home.png" alt="메인페이지"></a><img src="images/right_arrow_black.png" alt="다음" class="next"></li>
+                        <li><a href="#none">정보공개</a><img src="images/right_arrow_black.png" alt="다음" class="next"></li>
+                        <li><a href="#none">사전정보공개</a><img src="images/right_arrow_black.png" alt="다음" class="next"></li>
+                        <li>사전정보공개목록</li>
+                    </ul>
+                </div>
+                
+            </section>
+        </div>
+        
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <footer>
+        <h2 class="blind">웹사이트 정보 영역</h2>
+        <div class="wrap top">
+            <div class="banzip">
+                <h3>현수막(배너)모음</h3>
+                <div class="pb">
+                    <a href="#none" class="prev"><img src="images/prevbig.png" alt="이전"></a>
+                    <a href="#none" class="stop"><img src="images/play.png" alt="재생"></a>
+                    <a href="#none" class="next"><img src="images/nextbig.png" alt="다음"></a>
+                </div>
+                <div class="cover">
+                    <ul class="fslide">
+                        <li>
+                            <ul class="cont">
+                                <li><a href="#none">국무총리 규제혁신추진단</a></li>
+                                <li><a href="#none">4·3기록물 유네스코 세계기록유산 등재 온라인 <br class="mb">응원 캠페인</a></li>
+                                <li><a href="#none">2023년 적용 최저임금</a></li>
+                                <li><a href="#none">국가 · 공무원, 공직유관단체 직원이 직장 내에서<br class="mb"> 성희롱·성폭력 2차 피해 예방</a></li>
+                                <li><a href="#none">고향사랑 기부제</a></li>
+                                <li><a href="#none">고위공직자 범죄신고</a></li>
+                                <li><a href="#none">2050 탄소중립녹색성장위원회</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="cont">
+                                <li><a href="#none">충청북도 의료비후불제 융자지원 사업 안내</a></li>
+                                <li><a href="#none">청년DB, 프로필 등록하고 경품 받자</a></li>
+                                <li><a href="#none">월드 엑스포 2030부산</a></li>
+                                <li><a href="#none">2023 북한인권보고서</a></li>
+                                <li><a href="#none">공유누리</a></li>
+                                <li><a href="#none">청탁금지법 이렇게 달라집니다!</a></li>
+                                <li><a href="#none">수어로 보는 대한민국정부</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="cont">
+                                <li><a href="#none">부패행위 신고자 보호</a></li>
+                                <li><a href="#none">6·25 비정규군 공로자 보상신청 안내</a></li>
+                                <li><a href="#none">누구나 어디서나 이용 가능한 화상 회의실</a></li>
+                                <li><a href="#none">보훈처, 친일귀속재산 매각 추진</a></li>
+                                <li><a href="#none">생활에 도움되는 방송통신 정책 안내서</a></li>
+                                <li><a href="#none">문화 포털(명정 문화 특별전 등)</a></li>
+                                <li><a href="#none">근로장려금 신청 안내</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="cont">
+                                <li><a href="#none">전사자 유가족 찾기</a></li>
+                                <li><a href="#none">국가정신건강정보누리집</a></li>
+                                <li><a href="#none">나라지킴이 3대 가족! 병역명문가를 찾습니다</a></li>
+                                <li><a href="#none">2023전북 아시아태평양 주 대회</a></li>
+                                <li><a href="#none">내 삶에 힘이 되는 희망사다리</a></li>
+                                <li><a href="#none">민방위 교육 및 훈련 홍보 영상 | 민방위 교육 영상</a></li>
+                                <li><a href="#none">공적연금연계제도</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="cont">
+                                <li><a href="#none">공공재정환수법 소개</a></li>
+                                <li><a href="#none">국민패널 지인찬스 이벤트</a></li>
+                            </ul>
+                        </li>
+                    </ul>  
+                </div>
+            </div>
+            
+            <div class="right">
+                <ul>
+                    <li><a href="#none">이용안내</a></li>
+                    <li><a href="#none">이용약관</a></li>
+                    <li class="per"><a href="#none">개인정보처리방침</a></li>
+                    <li><a href="#none">저작권정책</a></li>
+                    <li><a href="#none">이메일무단수집거부</a></li>
+                    <li><a href="#none">부서별 연락처</a></li>
+                    <li><a href="#none">찾아오시는길</a></li>
+                </ul>
+                <address>
+                    (30113) 세종특별자치시 도움4로 9 정부세종처사 9동<br>
+                    <span>대표전화 1577-6060<br>
+                    (평일 09:00 ~ 18:00)<br></span>
+                    정부민원상담안내 국번없이 110(무료)<br>
+                    <span>주말 연락처 바로 가기</span>
+                    <img src="images/wa_mark.png" alt="wa">
+                </address>
+            </div>
+            <div class="loc">
+                <ul>
+                    <li><a href="#none">서울지방보훈청</a></li>
+                    <li><a href="#none">서울남부보훈지청</a></li>
+                    <li><a href="#none">서울북부보훈지청</a></li>
+                    <li><a href="#none">경기남부보훈지청</a></li>
+                    <li><a href="#none">경기동부보훈지청</a></li>
+                    <li><a href="#none">인천보훈지청</a></li>
+                    <li><a href="#none">경기북부보훈지청</a></li>
+                    <li><a href="#none">강원서부보훈지청</a></li>
+                    <li><a href="#none">강원동부보훈지청</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#none">부산지방보훈청</a></li>
+                    <li><a href="#none">울산보훈지청</a></li>
+                    <li><a href="#none">경남동부보훈지청</a></li>
+                    <li><a href="#none">경남서부보훈지청</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#none">대전지방보훈청</a></li>
+                    <li><a href="#none">충남동부보훈지청</a></li>
+                    <li><a href="#none">충남서부보훈지청</a></li>
+                    <li><a href="#none">충북북부보훈지청</a></li>
+                    <li><a href="#none">충북남부보훈지청</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#none">대구지방보훈청</a></li>
+                    <li><a href="#none">경북부보훈지청</a></li>
+                    <li><a href="#none">경북남부보훈지청</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#none">광주지방보훈청</a></li>
+                    <li><a href="#none">전남동부보훈지청</a></li>
+                    <li><a href="#none">전남서부보훈지청</a></li>
+                    <li><a href="#none">전북동부보훈지청</a></li>
+                    <li><a href="#none">전북서부보훈지청</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#none">제주특별자치도보훈청</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#none">국립서울현충원</a></li>
+                    <li><a href="#none">국립대전현충원</a></li>
+                    <li><a href="#none">국립4.19민주묘지관리소</a></li>
+                    <li><a href="#none">국립3.15민주묘지관리소</a></li>
+                    <li><a href="#none">국립5.18민주묘지관리소</a></li>
+                    <li><a href="#none">국립신암선열공원</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#none">국립영천호국원</a></li>
+                    <li><a href="#none">국립임실호국원</a></li>
+                    <li><a href="#none">국립이천호국원</a></li>
+                    <li><a href="#none">국립산청호국원</a></li>
+                    <li><a href="#none">국립괴산호국원</a></li>
+                    <li><a href="#none">국립제주호국원</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="wrap btm">
+            <p class="pc">Copyright ⓒ Ministry of Patriots and Veterans Affairs. All Rights Reserved.</p>
+            <span class="more">지방보훈관서 선택 <img src="images/up.png" alt="보이기"></span>
+            <p class="mb">Copyright ⓒ Ministry of Patriots and Veterans Affairs. All Rights Reserved.</p>
+        </div>
+        
+        
+    </footer>
+    
+    
+    
+    
+    
+    <script src="js/index.js"></script>
+    <script>
+        
+        
+        
+        /* main */
+
+
+        //pc
+
+        
+        
+        //mb
+
+        
+        
+        
+        
+        
+    </script>
+    
+</body>
+</html>
